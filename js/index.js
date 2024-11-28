@@ -80,10 +80,10 @@ function login() {
     const lastUser = userContainer[userContainer.length - 1];
 
     alert(`Welcome, ${lastUser.code}! Redirecting to Home.`);
-
+    clearForm();
 
     window.location.href = './home.html';
-    clearForm();
+
 }
 
 
