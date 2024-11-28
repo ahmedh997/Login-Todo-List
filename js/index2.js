@@ -81,7 +81,7 @@ function saveTasks() {
 
 // Function to load tasks from local storage
 function loadTasks() {
-    const savedTasks = JSON.parse(localStorage.getItem("tasks"));
+    const savedTasks = JSON.parse(localStorage.getItem("tasks")) || [];
     savedTasks.forEach((task) => addTask(task.text, task.completed));
 }
 
