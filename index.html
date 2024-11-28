@@ -1,0 +1,49 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <!-- font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+    <!-- f a css  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- b s css  -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <!-- main css  -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="login-form w-50 mx-auto p-5 box-shadow shadow-lg mt-5 rounded-5">
+        <div class="icon p-2 mx-auto"><i class="fa-solid fa-arrow-right-to-bracket"></i></div>
+        <h1 class="text-center p-2 fw-bolder">Smart Login System</h1>
+        <h5 class="text-center p-1 text-white"><em>"Your gateway to effortless productivity!"</em></h5>
+        <div class="nameInputHolder form-floating mb-3 d-none">
+            <input type="text" class="form-control border-0 border-bottom" id="userName" placeholder="userName">
+            <label for="userName"><i class="fa-solid fa-user px-3"></i>Enter your name :</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control border-0 border-bottom" id="userEmail" placeholder="userEmail">
+            <label for="userEmail"><i class="fa-solid fa-envelope px-3"></i>Enter your email :</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="password" class="form-control border-0 border-bottom" id="userPass" placeholder="userPass">
+            <label for="userPass"><i class="fa-solid fa-lock px-3"></i>Enter your password :</label>
+        </div>
+        <button id="loginBtn" class="w-100 rounded-3 btn btn-dark mt-3 py-2">Login</button>
+        <button id="signBtn" class="w-100 rounded-3 btn btn-dark mt-3 py-2 d-none">Sign up</button>
+        <p class="signUp text-center mt-4 mb-0">Don't have an account? <span class="signUpText">Sign-up</span></p>
+        <p class="logIn text-center mt-4 mb-0 d-none">You have an account? <span class="loginText">Login</span></p>
+    </div>
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

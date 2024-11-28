@@ -1,0 +1,43 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+
+    <!-- font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+    <!-- f a css  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- b s css  -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <!-- main css  -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="login-form welcome w-50 mx-auto p-5 box-shadow shadow-lg mt-5 rounded-5 ">
+
+        <h1 id="welcomeMessage" class="text-center text-white fw-bolder">Welcome user!</h1>
+        <div class="todo-app  text-center mx-auto mt-5">
+            <h2><em>create a to-do list</em></h2>
+            <div class="todo-input">
+                <input type="text" id="taskInput" placeholder="Add a new task...">
+                <button id="addTaskBtn">Add</button>
+            </div>
+            <ul id="taskList" class="task-list"></ul>
+        </div>
+
+    </div>
+    <button class="btn btn-warning logout-btn"><i class="fa-solid fa-sign-out-alt"></i> Logout</button>
+
+
+    <script src="./js/index2.js"></script>
+</body>
+
+</html>

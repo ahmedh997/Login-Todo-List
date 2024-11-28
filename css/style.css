@@ -1,0 +1,157 @@
+/* Root Variables for Theme */
+:root {
+    --main-color: #6DD5FA;
+}
+
+/* General Styles */
+::-moz-selection {
+    background-color: var(--main-color);
+}
+
+::selection {
+    background-color: var(--main-color);
+}
+
+body {
+    background-image: url(../images/pexels-pixabay-531972.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "League Spartan", sans-serif;
+}
+
+/* Login Form Styling */
+.login-form {
+    background: transparent;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+}
+
+/* Icon Styling */
+.icon {
+    background-color: aliceblue;
+    border-radius: 25px;
+    width: 80px;
+    height: 80px;
+    -webkit-box-shadow: rgba(1, 1, 225, 0.2) 0px 2px 8px 0px;
+    box-shadow: rgba(1, 1, 225, 0.2) 0px 2px 8px 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-size: 30px;
+    color: var(--main-color);
+}
+
+/* Input Fields */
+.form-floating {
+    color: grey;
+}
+
+/* Hover Effect for Interactive Elements */
+span:hover {
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+/* Logout Button */
+.logout-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+/* Heading Styles */
+h1 {
+    text-shadow: 2px 2px 8px var(--main-color);
+}
+
+/* To-Do App Container */
+.todo-app {
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+}
+
+/* Input Section */
+.todo-input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.todo-input input {
+    width: 75%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.todo-input button {
+    padding: 10px 20px;
+    background: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.todo-input button:hover {
+    background: #4cae4c;
+}
+
+/* Task List */
+.task-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Task Items */
+.task-list li {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+/* Completed Tasks */
+.task-list li.completed {
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+/* Task Buttons */
+.task-list li button {
+    background: #d9534f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.task-list li button:hover {
+    background: #c9302c;
+}
